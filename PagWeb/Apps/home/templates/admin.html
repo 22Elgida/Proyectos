@@ -1,0 +1,49 @@
+{% extends 'base.html' %}
+
+{% block titulo %}
+<title>Administradores</title>
+{% endblock %}
+
+{% block contenido %}
+    
+<li class="nav-item px-lg-4"><a class="nav-link text-uppercase" href="{% url 'home:homeapp' %}">Home</a></li> 
+<li class="nav-item px-lg-4"><a class="nav-link text-uppercase" href="{% url 'home:estudianteapp' %}">Estudiantes</a></li>
+<li class="nav-item px-lg-4"><a class="nav-link text-uppercase" href="{% url 'home:acercapp' %}">Acerca de</a></li>
+
+    <FONT COLOR="blue"><h3><br><b>Listado de Administradores</h3>
+        <FONT COLOR="green"><h5>
+    <div class="table-responsive">
+        <table class="table table-hover table-dark text-center";>
+            <thead class="thead-lighy">
+        <tr>
+            <td><FONT COLOR="cyan"><h2>Id</td>
+            <td><FONT COLOR="cyan"><h2>Nombre</td>
+            <td><FONT COLOR="cyan"><h2>Apellido</td>
+        </FONT></tr>
+        <tr>
+            <td>1</td>
+            <td>Rosario</td>
+            <td>Maldonado</td> 
+        </tr>
+        <tr>
+            <td>2</td>
+            <td>Beatriz</td>
+            <td>Escobar</td> 
+        </tr>
+        <tr>
+            <td>3</td>
+            <td>Abner</td>
+            <td>Orozco</td> 
+        </tr>
+        <tr>
+            <td>4</td>
+            <td>Mario</td>
+            <td>Orozco</td> 
+        </tr>
+        <tr>
+            <td>5</td>
+            <td>Gabriela</td>
+            <td>Velasquez</td> 
+        </tr></h5>
+    </table>
+{% endblock %}

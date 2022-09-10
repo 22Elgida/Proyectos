@@ -1,0 +1,18 @@
+{% extends 'base.html' %}
+
+{% block titulo %}
+<title>Pagina Web</title>
+{% endblock %}
+
+{% block contenido %}
+ 
+<li class="nav-item px-lg-4"><a class="nav-link text-uppercase" href="">Home</a></li> 
+<li class="nav-item px-lg-4"><a class="nav-link text-uppercase" href="{% url 'home:estudianteapp' %}">Estudiantes</a></li>
+<li class="nav-item px-lg-4"><a class="nav-link text-uppercase" href="{% url 'home:adminapp' %}">Administradores</a></li>
+<li class="nav-item px-lg-4"><a class="nav-link text-uppercase" href="{% url 'home:acercapp' %}">Acerca de</a></li>
+
+<p><FONT COLOR="white" text-left ><h2><b><br><br>ELGIDA GABRIELA FUENTES VELASQUEZ
+<br>  0903-10-3033
+        </h2></p></FONT></b>
+
+{% endblock %}

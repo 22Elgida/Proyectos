@@ -1,0 +1,14 @@
+{% extends 'base.html' %}
+
+{% block titulo %}
+<title>Acerca</title>
+{% endblock %}
+
+{% block contenido %} 
+<li class="nav-item px-lg-4" align="right"><a class="nav-link text-uppercase" href="{% url 'home:homeapp' %}">Home</a></li>                        
+<li class="nav-item px-lg-4"><a class="nav-link text-uppercase" href="{% url 'home:estudianteapp' %}">Estudiantes</a></li>
+<li class="nav-item px-lg-4"><a class="nav-link text-uppercase" href="{% url 'home:adminapp' %}">Administradores</a></li>  
+    <FONT COLOR="yellow"><h2> <br>Somos una empresa, agarrados de la mano de Dios.</p></FONT>
+
+
+{% endblock %}
